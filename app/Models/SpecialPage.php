@@ -35,11 +35,17 @@ class SpecialPage extends Model
         'hash'
     ];
 
+    /**
+     * @return BelongsTo
+     */
     public function client(): BelongsTo
     {
         return $this->belongsTo(Client::class);
     }
 
+    /**
+     * @return HasMany
+     */
     public function specialPageClicks(): HasMany
     {
         return $this->hasMany(SpecialPageClick::class);

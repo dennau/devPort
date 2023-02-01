@@ -9,6 +9,9 @@ class SpecialPageClick extends Model
 {
     use HasFactory;
 
+    /**
+     * @var string[]
+     */
     public $fillable = [
         'special_page_id',
         'number',
